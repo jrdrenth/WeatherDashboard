@@ -1,4 +1,4 @@
-# 06 Server Side APIs: WeatherDashboard
+# 06 Server Side APIs: Weather Dashboard
 
 ## Description
 
