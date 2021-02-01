@@ -7,7 +7,7 @@ This is a weather dashboard website.  It allows a user to search for weather bas
 
 ## Screenshot
 
-![weather dashboard](./demo.png)
+![weather dashboard](./screenshot.png)
 
 
 ## Repository:
