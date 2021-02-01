@@ -47,7 +47,7 @@ $(document).ready(function() {
     var uvIndex;
     
     var apiKey = '4f52a049b01e8f2b31bd78273fe21e1f';
-    var queryURL = 'http://api.openweathermap.org/data/2.5/uvi?appid=' + apiKey + '&lat=' + lattitude + '&lon=' + longitude;
+    var queryURL = 'https://api.openweathermap.org/data/2.5/uvi?appid=' + apiKey + '&lat=' + lattitude + '&lon=' + longitude;
 
     $.ajax({
       url: queryURL,
@@ -90,7 +90,7 @@ $(document).ready(function() {
 
     // create html content for current weather
     var currentImage = $('<img>');
-    currentImage.attr('src', 'http://openweathermap.org/img/w/' + apiResponse.weather[0].icon + '.png');
+    currentImage.attr('src', 'https://openweathermap.org/img/w/' + apiResponse.weather[0].icon + '.png');
     
     var title = $('<h3>');
     title.addClass('card-title');
@@ -124,7 +124,7 @@ $(document).ready(function() {
 
   function getCurrentWeather(cityName, isNewSearch = false) {
     var apiKey = '4f52a049b01e8f2b31bd78273fe21e1f';
-    var queryURL = 'http://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + apiKey + '&units=imperial';
+    var queryURL = 'https://api.openweathermap.org/data/2.5/weather?q=' + cityName + '&appid=' + apiKey + '&units=imperial';
 
     $.ajax({
       url: queryURL,
@@ -159,7 +159,7 @@ $(document).ready(function() {
     cardTitle.text(new Date(forecastIncrement.dt_txt).toLocaleDateString());
 
     var image = $('<img>');
-    image.attr('src', 'http://openweathermap.org/img/w/' + forecastIncrement.weather[0].icon + '.png');
+    image.attr('src', 'https://openweathermap.org/img/w/' + forecastIncrement.weather[0].icon + '.png');
 
     var temp = $('<p>');
     temp.addClass('card-text');
@@ -203,7 +203,7 @@ $(document).ready(function() {
 
   function getForecast(cityName) {
     var apiKey = '4f52a049b01e8f2b31bd78273fe21e1f';
-    var queryURL = 'http://api.openweathermap.org/data/2.5/forecast?q=' + cityName + '&appid=' + apiKey + '&units=imperial';
+    var queryURL = 'https://api.openweathermap.org/data/2.5/forecast?q=' + cityName + '&appid=' + apiKey + '&units=imperial';
       
     $.ajax({
       url: queryURL,
